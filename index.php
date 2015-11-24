@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ellen G.</title>
-	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<title>Hire Ellen</title>
+	<link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="libs/zero.js"></script>
@@ -34,7 +34,7 @@
 				<div class="row content">
 					<div id="afix2" class="col-lg-6 col-lg-push-6 col-md-6 col-md-push-6 col-sm-6 col-sm-push-6 col-xs-12">				
 						<h3>Hello. I'm Ellen. I make beautiful content.</h3>
-						<p>I am a passionate freelancer located in Austin, Texas. I specialize in stunning eBooks and blog posts. Let's collaborate on your awesome projects. I send custom written samples for free. All I need is your name and email address. I promise never to spam you, annoy you, or send you silly chain emails.</p>
+						<p>I am a passionate freelancer located in Austin, Texas. I specialize in writing/designing stunning eBooks and blog posts. I created this website as an open invitation to collaborate with awesome new clients like you. To see if we'd be a good fit, I am happy to send you a custom written sample or my portfolio of great work. All I need is your name and email address below. I promise never to spam you, annoy you, or send you silly chain emails.</p>
 						<form id="wholeForm" class="form-horizontal" action="" method="POST">
 							<div id="formEmail" class="form-group has-feedback">
 							  	<label class="control-label sr-only" for="clientEmail">Input group with success</label>
