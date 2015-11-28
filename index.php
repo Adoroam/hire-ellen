@@ -18,6 +18,7 @@
 	if (isset($_POST['clientEmail'])) {
 		$clientEmail = $_POST['clientEmail'];
 		$clientName = $_POST['clientName'];
+		if ($clientName == "") { $clientName = "No Name Provided"};
 		$data = $clientName . " - " . $clientEmail . "\n";
 		$ret = file_put_contents('clientlist.txt', $data, FILE_APPEND | LOCK_EX);
 			if($ret === false) {
@@ -40,13 +41,10 @@
 							  	<label class="control-label sr-only" for="clientEmail">Input group with success</label>
 							  	<div class="input-group">								  	
 							    		<input type="text" class="form-control" id="clientName" name="clientName" aria-describedby="inputGroupSuccess3Status" placeholder="type name here"><!-- name input -->
-							    	</div>
-							    	<div class="input-group">
 							    		<input type="text" class="form-control" id="clientEmail" name="clientEmail" aria-describedby="clientEmailStatus" placeholder="type email here"><!-- email input -->
-							    		<span id="clientEmailStatus" class="sr-only">(success)</span>					    	
-							  	</div>		
-							  	<div class="input-group">
-							  		<input id="scoot" class="btn btn-default" type="submit" value="Email Me"><!-- email button -->
+							    		<span id="clientEmailStatus" class="sr-only">(success)</span>				    	
+							  	
+							  		<button id="scoot" class="btn btn-default form-control" type="submit" disabled="disabled">Email Me</button>
 							  	</div>				
 							</div>	
 						</form>					

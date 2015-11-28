@@ -13,6 +13,24 @@ function align(outside, inside){
 	$(inside).css("margin-top", bmargin );
 	$(inside).css("margin-bottom", bmargin);
 }
+function formColor () {
+	var emailText = $("#clientEmail").val();
+	if (validateEmail(emailText) == true) {
+		$("#formEmail").removeClass("has-error");
+		$("#formEmail").addClass("has-success");			
+	} else if  (emailText == "")  {
+		$("#formEmail").removeClass("has-error");
+		$("#formEmail").removeClass("has-success");			
+	} else {
+		$("#formEmail").addClass("has-error");
+	};
+	var emailText = $("#clientEmail").val();
+	if (validateEmail(emailText) == true) {
+		$('#scoot').prop("disabled", false);
+	}	else {
+		$('#scoot').prop("disabled", true);
+	};			
+}
 //jquery
 $(document).ready(function(){	
 	align($("#afix1"), $("#afix2"));
@@ -21,25 +39,10 @@ $(document).ready(function(){
 		align($("#afix1"), $("#afix2"));
 		align($(window), $(".scooch"));
 	});
-	
-	$('#clientEmail').change(function( event ) {
-		var emailText = $("#clientEmail").val();
-		if (validateEmail(emailText) == true) {
-			$("#formEmail").removeClass("has-error");
-			$("#formEmail").addClass("has-success");			
-		} else if  (emailText == "")  {
-			$("#formEmail").removeClass("has-error");
-			$("#formEmail").removeClass("has-success");			
-		} else {
-			$("#formEmail").addClass("has-error");
-		};			
+	$('#clientEmail').keyup(function( event ) { 
+		formColor(); 
 	});
-	$('#scoot').click(function(){
-		var emailText = $("#clientEmail").val();
-		if (validateEmail(emailText) == true) {
-			$('#wholeForm').submit();
-		}	else {
-			$('#alertBox').html('<div id="emailAlertLose" class="alert alert-danger"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><strong> Uh Oh!</strong> Something went wrong. Check your email and try again.</div>');	
-		};
+	$('#clientEmail').change(function( event ) { 
+		formColor(); 
 	});
 });
