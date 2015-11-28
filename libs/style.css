@@ -30,3 +30,6 @@ a:hover {
 	left: 0;
 	z-index: 1;
 }
+.input-group {
+	width: 100%;
+}

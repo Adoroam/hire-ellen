@@ -39,15 +39,20 @@
 							<div id="formEmail" class="form-group has-feedback">
 							  	<label class="control-label sr-only" for="clientEmail">Input group with success</label>
 							  	<div class="input-group">								  	
-							    	<input type="text" class="form-control" id="clientName" name="clientName" aria-describedby="inputGroupSuccess3Status" placeholder="type name here"><!-- name input -->
-							    	<input type="text" class="form-control" id="clientEmail" name="clientEmail" aria-describedby="clientEmailStatus" placeholder="type email here"><!-- email input -->
-							    	<span id="clientEmailStatus" class="sr-only">(success)</span><span id="scoot" class="input-group-addon btn">Email Me</span><!-- email button -->
-							  	</div>						
+							    		<input type="text" class="form-control" id="clientName" name="clientName" aria-describedby="inputGroupSuccess3Status" placeholder="type name here"><!-- name input -->
+							    	</div>
+							    	<div class="input-group">
+							    		<input type="text" class="form-control" id="clientEmail" name="clientEmail" aria-describedby="clientEmailStatus" placeholder="type email here"><!-- email input -->
+							    		<span id="clientEmailStatus" class="sr-only">(success)</span>					    	
+							  	</div>		
+							  	<div class="input-group">
+							  		<input id="scoot" class="btn btn-default" type="submit" value="Email Me"><!-- email button -->
+							  	</div>				
 							</div>	
 						</form>					
 					</div>	<!-- end afix2 -->
 					<div id="afix1" class="col-lg-6 col-lg-pull-6 col-md-6 col-md-pull-6 col-sm-6 col-sm-pull-6 col-xs-12 ">		
-						<img  class="img-responsive" src="http://i.imgur.com/nKWQnh7.png" />
+						<img  title="Office vector designed by Freepik" class="img-responsive" src="http://i.imgur.com/nKWQnh7.png" />
 					</div><!-- testing commits -->
 					
 				</div> <!--end internal row-->

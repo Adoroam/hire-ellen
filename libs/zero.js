@@ -1,4 +1,4 @@
-//javascript/jquery goes here
+//javascript functions/variables
 function validateEmail(email) {
     var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
     return re.test(email);
@@ -13,6 +13,7 @@ function align(outside, inside){
 	$(inside).css("margin-top", bmargin );
 	$(inside).css("margin-bottom", bmargin);
 }
+//jquery
 $(document).ready(function(){	
 	align($("#afix1"), $("#afix2"));
 	align($(window), $(".scooch"));
