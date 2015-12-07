@@ -5,8 +5,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="libs/zero.js"></script>
-	
+	<script src="libs/zero.js"></script>	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,20 +14,16 @@
 </head>
 <body>
 	<div id="alertBox"> <?php
-	if (isset($_POST['clientEmail'])) {
+		if (isset($_POST['clientEmail'])) {
 		$clientEmail = $_POST['clientEmail'];
 		$clientName = $_POST['clientName'];
-		if ($clientName == "") { $clientName = "No Name Provided"};
-		$data = $clientName . " - " . $clientEmail . "\n";
-		$ret = file_put_contents('clientlist.txt', $data, FILE_APPEND | LOCK_EX);
-			if($ret === false) {
-				echo '<div id="emailAlertLose" class="alert alert-danger"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><strong> Uh Oh!</strong>Something went wrong. Check your email and try again.</div>';
-			}
-			else {
-				echo '<div id="emailAlertWin" class="alert alert-success"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><strong>Thanks!</strong> I will be in contact with you soon.</div>';
-			}
-}
-?>	</div>
+		if ($clientName == "") { 
+		   $clientName = "No Name Provided";
+		}
+		$msg = "You have a new business inquiry from " . $clientName . "\nTheir email address is: " . $clientEmail;
+		mail("llngrmn@gmail.com","new hire-ellen.com client",$msg);
+		}
+?></div>
 	<div class="container-fluid scooch">
 		<div class="row beige ">
 			<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
