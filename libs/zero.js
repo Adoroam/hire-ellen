@@ -1,3 +1,17 @@
+//angular
+
+var app = angular.module("ang", []);
+
+app.controller('MainController', ['$scope', function($scope) {
+    
+//slider change save to standby and set preview
+    $scope.rgbInternal = function(r, g, b, index) {
+           
+    }
+   
+}]);
+
+
 //javascript functions/variables
 function validateEmail(email) {
     var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;

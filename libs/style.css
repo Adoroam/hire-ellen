@@ -30,6 +30,22 @@ a:hover {
 	left: 0;
 	z-index: 1;
 }
+.input-group-addon {
+	width: 6em;
+	text-align: right;
+}
 .input-group {
 	width: 100%;
+}
+.option {
+	color: gray ;
+}
+.center {
+	text-align: center;
+}
+.insideBox {
+	padding: 0em 5em;
+}
+.ital {
+	font-style: italic;
 }
