@@ -41,7 +41,8 @@
 			<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
 				<div class="row content">
 					<div id="afix2" class="col-lg-6 col-lg-push-6 col-md-6 col-md-push-6 col-sm-6 col-sm-push-6 col-xs-12">				
-						<h3>Hello. I'm Ellen. I make books happen.</h3>
+						<h3 class="heading visible-xs-block">Hello. I'm Ellen. I make books <span class="ital">happen</span>.</h3>
+						<h3 class="heading hidden-xs" >Hello. I'm Ellen. <br>I make books <span class="ital">happen</span>.</h3>
 
 						<div ng-repeat="x in cList">
 							<div class="list-group">

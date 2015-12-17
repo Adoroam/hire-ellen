@@ -6,6 +6,9 @@ h1, h2, h3, h4, h5 {
 	font-family: "Libre Baskerville", serif;
 	font-weight: 100;
 }
+h3 {
+	font-size: 1.3em;
+}
 p {
 	font-size: 1.1em;
 }
@@ -17,7 +20,7 @@ a:hover {text-decoration: none;}
 	box-sizing: border-box;
 	}
 .top-spacer {
-	height: 5em;
+	height: 1em;
 }
 .content {
 	padding: 10px;
@@ -77,4 +80,24 @@ button.list-group-item:hover, button.list-group-item:focus {
 	color: #F2F0DF;
 	background-color: #607890;
 	margin: 0em auto;
+}
+@media (min-width: 768px) {
+	.top-spacer {
+		height: 5em;
+	}
+}
+@media (min-width: 600px) {
+	.heading {
+		font-size: 1.5em;
+	}
+}
+@media (min-width: 768px) {
+	.heading {
+		font-size: 1.7em;
+	}
+}
+@media (min-width: 1300px) {
+	.heading {
+		font-size: 2.2em;
+	}
 }
