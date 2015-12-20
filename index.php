@@ -7,6 +7,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-animate.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="libs/fb_pixel.js"></script>
 	<script src="libs/zero.js"></script>	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -15,6 +16,12 @@
 	<meta name="Website Author" content="Anthony Stabile">
 </head>
 <body ng-controller="MainController">
+<!-- FB PIXEL -->
+	<noscript>
+		<img height="1" width="1" style="display:none"
+		src="https://www.facebook.com/tr?id=442757292601442&ev=PageView&noscript=1" />
+	</noscript>
+<!-- END FB PIXEL -->
 	<div id="alertBox"> 
 <?php
 	if (isset($_POST['clientEmail'])) {
