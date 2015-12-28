@@ -48,15 +48,22 @@ a:hover {text-decoration: none;}
 	text-align: left;
 }
 .modalButton {
+	border-color: #607890;
 	background-color: #A9C1D9;
 }
 .modalButton:hover, .modalButton:focus {
 	color: #F2F0DF;
 	background-color: #607890;
 }
+div.list-group-item {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-color: #8E9E82;
+}
 button.list-group-item {
 	outline: none;
 	background-color:  #CACCB6;
+	border-color: #8E9E82;
 }
 button.list-group-item:hover, button.list-group-item:focus {
 	color: #F2F0DF;
