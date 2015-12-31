@@ -48,6 +48,10 @@ a:hover {text-decoration: none;}
 	text-align: left;
 }
 .modalButton {
+	width: 100%;
+	height: 3em;
+	margin-bottom: 1em;
+	padding: .7em;
 	border-color: #607890;
 	background-color: #A9C1D9;
 }
@@ -70,16 +74,24 @@ button.list-group-item:hover, button.list-group-item:focus {
 	background-color:  #8E9E82;
 }
 
-.dropContent.ng-enter {	
-	height: 0px;
-	transition:  1s ease all ;
+.dropContent.ng-enter {
+	transition: 1s linear all;	
+	max-height: 0;
 	opacity: 0;
-	
 }
 .dropContent.ng-enter-active {
-	height: auto;
+	max-height: 50em;
 	opacity: 1;
 }	
+.dropContent.ng-leave {
+	transition: .2s linear all;
+	max-height: 50em;
+	opacity: 1;
+}
+.dropContent.ng-leave-active {
+	max-height: 0;
+	opacity: 0;
+}
 #scoot {
 	background-color: #A9C1D9;
 }
