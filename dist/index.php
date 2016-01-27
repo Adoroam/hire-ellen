@@ -32,7 +32,7 @@ if (isset($_POST['clientEmail'])) {
     src="https://www.facebook.com/tr?id=442757292601442&ev=PageView&noscript=1" />
 </noscript>
  <!-- END FB PIXEL -->
-  <div layout-fill layout="column" layout-align="space-between center" ng-cloak ng-controller="ScrollCtrl">
+  <div layout="column" layout-align="space-between center" ng-cloak ng-controller="ScrollCtrl">
     <cat></cat>
     <!-- HOME -->
     <div layout-margin>
