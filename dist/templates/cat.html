@@ -1,0 +1,8 @@
+<div class="categories" layout-margin layout="row" layout-align="space-between center">
+  <a class="category" 
+    ng-repeat="x in categories" 
+    ng-click="change($index);"
+    ng-show="x.avail">
+    {{x.name}}
+  </a>
+</div>

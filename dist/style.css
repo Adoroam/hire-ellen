@@ -1,0 +1,109 @@
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #F7E4BE;
+    color: #73626E;
+}
+body {
+    background-color: #F7E4BE;
+    color: #73626E;
+}
+a, a:hover, a:focus {
+    color: #73626E;
+    text-decoration: none;
+    cursor: pointer;
+}
+em {font-weight: bold;}
+.serif {font-family: 'Josefin Slab', serif;}
+.center {text-align: center;}
+.small {font-size: .8em;}
+.bold {font-weight: bold;}
+.ital {font-style: italic;}
+.right {text-align: right;}
+.title-text {
+    font-size: 5em;
+    font-weight: bold;
+}
+.divider {
+    height: 3px;
+    width: 100%;
+    background-color: #73626E;
+}
+.subtitle-text {
+    font-size: 5em;
+    font-weight: lighter;
+    margin: .5em 1em;
+}
+.fil-box {
+    width: 40em;
+    margin-bottom: 1em;
+}
+.home-fil {
+    height: 5em;
+    margin: 0 2em;
+}
+.category {
+    border-bottom: dotted .2em #B38184;
+}
+.hire {
+    margin-bottom: 2em;
+}
+.hire-text {
+    font-size: 3em;
+    font-weight: lighter;   
+    text-align: center;
+}
+.categories {}
+.categories .category {
+    font-size: 2em;
+    font-weight: 100;
+}
+.page-div {
+    height: 3px;
+    width: 30em;
+    border: 1px solid #73626E;
+}
+.page-text {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+}
+.page-text * {
+    margin: 1em 0;
+}
+.page-text dt {
+    font-weight: bolder;
+}
+.page-subtitle-text {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+.price-fil {
+    height: 1em;
+    margin: 0 .5em;
+}
+.price-ref {
+    font-size: .5em;
+}
+.why-text {
+    max-width: 700px;
+}
+input {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #F7E4BE;
+    color: #73626E;
+    border: none;
+}
+.good {
+    background-color: rgba(0, 255, 0, 0.2);
+}
+.bad {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+.submit {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: .5em;
+    background-color: #F7E4BE;
+    color: #73626E;
+    cursor: pointer;
+    border:none;
+    border-bottom: dotted .2em #B38184;
+}
