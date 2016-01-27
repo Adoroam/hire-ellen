@@ -1,8 +1,6 @@
-<div class="categories" layout-margin layout="row" layout-align="space-between center">
-  <a class="category" 
-    ng-repeat="x in categories" 
-    ng-click="change($index);"
-    ng-show="x.avail">
-    {{x.name}}
-  </a>
+<div class="categories" ng-class="catShadow();" 
+layout="row" layout-align="space-around center" layout-wrap>
+    <div ng-repeat="x in categories" class="center" flex-xs="50" flex-gt-xs="25">
+      <a class="category" ng-click="gotoElement(x.url)">{{x.name}}</a>
+    </div>
 </div>

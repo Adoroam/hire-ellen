@@ -1,26 +1,13 @@
 
-app.controller('indexCtrl', function($scope) {
+app.controller('indexCtrl', ['$scope', '$location', function($scope, $location) {
+    $scope.catShadow = function(){
+        return "cat-shadow";
+    };
     $scope.categories = [
-        {
-            name: 'HIRE ME',
-            label: 'hire',
-            avail: false
-        },
-        {
-            name: 'SERVICES',
-            label: 'serv',
-            avail: true
-        },
-        {
-            name: 'PRICES',
-            label: 'price',
-            avail: true
-        },
-        {
-            name: 'WHY ME?',
-            label: 'why',
-            avail: true
-        }
+        {name: 'HIRE ME', label: 'hire',url: 'hire-me'},
+        {name: 'SERVICES', label: 'serv',url: 'services'},
+        {name: 'PRICES', label: 'price',url: 'prices'},
+        {name: 'WHY ME?', label: 'why',url: 'why-me'}
     ];
     $scope.active = {label: 'home'};
     $scope.change = function(index) {
@@ -56,4 +43,4 @@ app.controller('indexCtrl', function($scope) {
             return true;
         }   else {return false;}
     };
-});
+}]);

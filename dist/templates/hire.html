@@ -1,29 +1,32 @@
-<div class="title-box" layout="column" layout-align="start center">
+<span class="anchor" id="hire-me"></span>
+<div class="title-box" layout="column" layout-align="start center" >
     <div class="page-div"></div>
     <h1 class="page-title-text">HIRE ME</h1>
     <div class="page-div"></div>
 </div>
 <div class="serif page-text">
-    <p class="page-subtitle-text center">I personally respond to info submitted here in less than 24 hours</p>
+    <p class="page-subtitle-text center">I personally respond to info submitted here in less than 24 hours.</p>
+    <form id="wholeForm" action="" method="POST">
      <div layout="row" layout-align="center center">
-         <form id="wholeForm" action="/" method="POST">
-         <img class="price-fil" src="img/filLeft.png" alt="swirl">
+         <img class="price-fil" src="img/filLeft.png" alt="swirl" hide show-gt-md>
          <input type="text" class="category center {{valid.name}}" 
          placeholder="NAME" name="clientName"
          ng-model="clientName" ng-change="validate('name');">
+         <img class="price-fil" src="img/filRight.png" alt="swirl" hide show-gt-md>
      </div>
      <div layout="row" layout-align="center center">
-         <img class="price-fil" src="img/filLeft.png" alt="swirl">
+         <img class="price-fil" src="img/filLeft.png" alt="swirl" hide show-gt-md>
          <input type="text" class="category center {{valid.email}}" 
          placeholder="EMAIL" name="clientEmail"
          ng-model="clientEmail" ng-change="validate('email');">
+         <img class="price-fil" src="img/filRight.png" alt="swirl" hide show-gt-md>
      </div>
-     <div layout="row" layout-align="center center" ng-show="submitStatus();">
+     <div layout="row" layout-align="center center">
+        <img class="price-fil" src="img/filLeft.png" alt="swirl">
         <button type="submit" class="submit">SUBMIT</button>
         <img class="price-fil" src="img/filRight.png" alt="swirl">
-       </form>
      </div>
-     <p class="center">I promise never to spam you, annoy you, copy/paste generic responses, or send you silly chain emails.</p>
+    </form>
+    <p class="center">I promise never to spam you, annoy you, copy/paste generic responses, or send you silly chain emails.</p>
    
 </div>
-<cat></cat>
