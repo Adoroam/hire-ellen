@@ -1,0 +1,21 @@
+{
+  "name": "hire-ellen",
+  "homepage": "http://hire-ellen.com/",
+  "authors": [
+    "Anthony <AStabile.Design@gmail.com>"
+  ],
+  "description": "static landing page for hire-ellen.com",
+  "main": "dist/index.php",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "editing",
+    "ghostwriting"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular-material": "^1.0.4"
+  }
+}
