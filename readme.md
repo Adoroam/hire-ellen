@@ -43,4 +43,5 @@
 - run ```npm install```
 - run ```bower install```
 - run ```gulp```
-> note the server it usually runs on is php. Running it this way will do nothing when the form is submitted. Ideally I would be on a node instance but this way works for now and since I'm the only one maintaining the code so it hasn't become too much of a problem.
+
+>note the server it usually runs on is php. Running it this way will do nothing when the form is submitted. Ideally I would be on a node instance but this way works for now and since I'm the only one maintaining the code so it hasn't become too much of a problem.
